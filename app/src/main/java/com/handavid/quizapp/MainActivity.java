@@ -1,6 +1,8 @@
 package com.handavid.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
@@ -31,9 +33,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         colorButton.setOnClickListener(new View.OnClickListener(){
-            @Override
+            //@Override
+            int a=0;
             public void onClick(View view){
-                displayText.setText("Wow your favorite color is "+ response2Text.getText().toString());
+                a=a+1;
+                displayText.setText("You clicked this button "+a+" times");
+                view.setBackgroundColor(Color.GREEN);
             }
         });
         responseText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
