@@ -9,29 +9,38 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button submitButton;
+    Button submitButton, colorButton;
     EditText responseText;
+    EditText response2Text;
     TextView displayText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         submitButton=findViewById(R.id.clickButton);
+        colorButton=findViewById(R.id.clickButton2);
         responseText=findViewById(R.id.responseEditText);
+        response2Text=findViewById(R.id.response2EditText);
         displayText=findViewById(R.id.textBox);
         submitButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 System.out.println("Hello mom");
                 Log.i("testButton","Hi dad! "+responseText.getText().toString());
-                displayText.setText(displayText.getText().toString()+" "+responseText.getText().toString());
+                displayText.setText("Hi "+ responseText.getText().toString());
+            }
+        });
+        colorButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                displayText.setText("Wow your favorite color is "+ response2Text.getText().toString());
             }
         });
         responseText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if(!hasFocus){
-                    if(responseText.getText().toString().equals("Hello TJ!")){
+                    if(responseText.getText().toString().equals("Hello TJ")){
                         displayText.setText("TJ Rocks!");
                         responseText.setText("");
                         responseText.setHint("That's a good name");
