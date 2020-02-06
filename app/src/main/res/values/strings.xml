@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Quiz App</string>
-    <string name="submit_button">Submit</string>
-    <string name="increment_button">Increment Button</string>
+    <string name="choice1">A</string>
+    <string name="choice2">B</string>
+    <string name="choice3">C</string>
+    <string name="choice4">D</string>
     <string name="color_button">Change Color</string>
     <string name="text_box_label">Hello TJ</string>
     <string name="name_hint">What is your name?</string>
