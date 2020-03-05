@@ -5,7 +5,10 @@
     <string name="choice3">C</string>
     <string name="choice4">D</string>
     <string name="color_button">Change Color</string>
-    <string name="text_box_label">Hello TJ</string>
+    <string name="text_box_label">QUIZ APP</string>
     <string name="name_hint">What is your name?</string>
     <string name="hint_incr">Increment?</string>
+    <string name="leaderButton">Leaderboard</string>
+    <string name="startButton">Start Quiz</string>
 </resources>
+
