@@ -10,5 +10,7 @@
     <string name="hint_incr">Increment?</string>
     <string name="leaderButton">Leaderboard</string>
     <string name="startButton">Start Quiz</string>
+    <string name="ent">Enter your name</string>
 </resources>
+
 
